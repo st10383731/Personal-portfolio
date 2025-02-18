@@ -19,10 +19,10 @@ A task management web app built with **HTML**, **CSS**, and **JavaScript** to he
 
 ![Task Management App](images/Screenshot 2025-02-15 164722.png)
 
-### 3. [Personal Portfolio Website](https://github.com/your-username/portfolio-website)
+### 3. [Personal Portfolio Website]
 This portfolio website, where you can view my projects and contact information.
 
-![Portfolio Website](images/portfolio.png)
+
 
 ## How to View
 
