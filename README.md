@@ -17,7 +17,7 @@ A simple e-commerce platform built with **HTML**, **CSS**, and **JavaScript**.
 ### 2. [Task Management App](https://github.com/st10383731/Task-Management-Web-App)
 A task management web app built with **HTML**, **CSS**, and **JavaScript** to help you organize your tasks.
 
-![Task Management App](images/Screenshot 2025-02-15 164722.png)
+
 
 ### 3. [Personal Portfolio Website]
 This portfolio website, where you can view my projects and contact information.
