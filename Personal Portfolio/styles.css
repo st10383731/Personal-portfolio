@@ -1,0 +1,287 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:  #f0f2f5;
+  color: black;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: lightseagreen;
+  color: black;
+  padding: 20px 0;
+}
+
+header .profile {
+  text-align: center;
+}
+
+header .profile h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+header .tagline {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .desktop-nav {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header .desktop-nav li {
+  margin: 0 15px;
+}
+
+header .desktop-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+header .desktop-nav a:hover {
+  color: #6a6aff;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+  display: none;
+  list-style: none;
+  background-color: #333;
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.mobile-menu li {
+  margin: 15px 0;
+}
+
+.mobile-menu li a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.mobile-menu li a:hover {
+  color: #6a6aff;
+}
+
+.mobile-menu-icon {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* About Me Section */
+#about {
+  background-color: gray;
+  padding: 60px 0;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  width: 40%;
+  margin-right: 30px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  max-width: 600px;
+  font-size: 1.1rem;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+}
+/* Projects Section */
+#projects {
+  background-color: lightseagreen;
+  padding: 60px 0;
+}
+
+#projects .projects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds space between project cards */
+}
+
+.project-card {
+  width: 30%; /* Default width for larger screens */
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card h3 {
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+.project-card p {
+  color: #555;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  #projects .projects {
+    justify-content: center; /* Center the cards on smaller screens */
+  }
+
+  .project-card {
+    width: 45%; /* Cards will take 45% width on medium-sized screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    width: 90%; /* Cards will take 90% width on small screens */
+  }
+}
+
+
+/* Contact Section */
+#contact {
+  background-color: grey;
+  padding: 60px 0;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+/* Lightbox Overlay */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.lightbox-overlay img {
+  max-width: 90%;
+  max-height: 80%;
+}
+
+.lightbox-overlay .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Fade-In Effect */
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.section.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .desktop-nav {
+      display: none;
+  }
+
+  .mobile-menu-icon {
+      display: block;
+  }
+
+  .mobile-menu {
+      display: block;
+  }
+
+  .about-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .about-image {
+      width: 70%;
+      margin: 20px 0;
+  }
+
+  .projects {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .project-card {
+      width: 80%;
+      margin-bottom: 20px;
+  }
+}
