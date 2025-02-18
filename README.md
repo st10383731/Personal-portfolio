@@ -28,7 +28,7 @@ This portfolio website, where you can view my projects and contact information.
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/st103883731/portfolio-website.git
+   git clone https://github.com/st103883731/Personal-portfolio.git
    ```
 
 2. Open the HTML files in your browser to view the projects.
